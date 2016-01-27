@@ -1,7 +1,8 @@
----
 title: Chocolatey Brownies
-date: 2016-01-26 14:25:08
-tags: Chocolatey Package Manger
+tags:
+  - Chocolatey Package Manger
+categories: []
+date: 2016-01-26 14:25:00
 ---
 
 Chocolatey is a package manager for windows which is similar to something like apt-get.

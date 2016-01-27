@@ -67,5 +67,20 @@ theme: phase
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+# - type: git
+#   repo: https://github.com/shaned24/crab-blog.git
+
 deploy:
-  type:
+  type: ftpsync
+  host: toughcrab.com
+  user: <%= ENV['SSH_USERNAME'] %>
+  pass: <%= ENV['SSH_PASSWORD'] %>
+  port: 21
+  remote: /var/www/dev-crabs
+  verbose: true
+  
+admin:
+username: shaned24
+password_hash: 2c9fd7d7f49c5f01ef7c5b1a14e5932f
+secret: a secret something to follow up on a hard day of making chocolatey brownies
